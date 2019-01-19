@@ -130,7 +130,8 @@ get_proto_number (const char *name)
     number = -1;
   else
     number = p->p_proto;
-  endprotoent ();
+  // FIX ME: Android NDK Compiler cant find this function
+  // endprotoent (); 
 
   return number;
 }
